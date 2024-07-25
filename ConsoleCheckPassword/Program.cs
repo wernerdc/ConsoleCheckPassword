@@ -24,7 +24,8 @@
                         appRunning = false;
                     }
                 } catch {
-                    Console.WriteLine("Ungültige Eingabe!"); 
+                    // no error message, just keep going and repeat the app
+                    
                 }
             }
         }
@@ -36,7 +37,7 @@
             try {
                 password = Console.ReadLine();
             } catch {
-                // no error message, just keep going and repeat the app 
+                Console.WriteLine("Ungültige Eingabe!");
             }
 
             return password;
